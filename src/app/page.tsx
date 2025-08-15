@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -44,6 +45,15 @@ export default function Home() {
           >
             Read our docs
           </a>
+        </div>
+
+        <div className={styles.portfolioSection}>
+          <Link href="/portfolio" className={styles.pulseButton}>
+            <span className={styles.pulseText}>Portfolio anzeigen</span>
+            <div className={styles.pulseRing}></div>
+            <div className={styles.pulseRing}></div>
+            <div className={styles.pulseRing}></div>
+          </Link>
         </div>
       </main>
       <footer className={styles.footer}>
